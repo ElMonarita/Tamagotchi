@@ -1,4 +1,4 @@
-def Is_dead(pet):
+def IsDead(pet):
     dead_messages = {
         "hunger": "died of starvation...",
         "energy": "collapsed from exhaustion...",

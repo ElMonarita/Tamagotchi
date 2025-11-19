@@ -1,9 +1,7 @@
-from src.tamagotchi import Tamagotchi
-from src.events import Feed, Sleep, Play, Wash
-from src.deathCheck import Is_dead
-from src.saveManager import SaveGame, SaveExists, LoadGame
+from src.game import StartGame, GameLoop
 
 if __name__ == '__main__':
+    """
     t = Tamagotchi("BOB")
     b = Tamagotchi("Patrick")
     print(t)
@@ -27,4 +25,7 @@ if __name__ == '__main__':
     data = LoadGame()
     pet=Tamagotchi.fromSave(data)
     print(pet)
-    
+    """
+
+    pet = StartGame()
+    GameLoop(pet)
