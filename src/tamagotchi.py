@@ -7,6 +7,14 @@ class Tamagotchi:
             "mood": 50,
             "cleanliness": 50
         }
+
+    @classmethod
+    def fromSave(cls, data):
+        """Crée un Tamagotchi à partir d'un dictionnaire chargé du JSON."""
+        pet = cls(data["name"])
+        pet.stats = data["stats"]
+        return pet
+    
     def __str__(self):
         """Show Stat of your pet"""
         return (
