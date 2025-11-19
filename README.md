@@ -1,7 +1,7 @@
 # Tamagotchi
 Creation of a game based on the Tamagotchi concept to learn more about Python. To do this, the game must include certain actions such as eating, sleeping, playing, etc. The game must also have a system to save the game in JSON.
 
-## 📌 Contenu du projet
+## 📌 Project Content
 
     Tamagotchi/
     │
@@ -59,7 +59,7 @@ The game uses a JSON file: `save.json`.
 
     python main.py
 
-## 👥 Auteurs
+## 👥 Authors
 
 Project completed by:
 - Rémy Bordes alias
