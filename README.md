@@ -59,5 +59,4 @@ The game uses a JSON file: `save.json`.
 
 Project completed by:
 - Rémy Bordes alias
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="18">
- ElMonarita and boremy-ynov
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="18"> ElMonarita and boremy-ynov
