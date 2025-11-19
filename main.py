@@ -1,5 +1,6 @@
 from src.tamagotchi import Tamagotchi
-from src.events import *
+from src.events import Feed, Sleep, Play, Wash
+from src.deathCheck import Is_dead
 
 if __name__ == '__main__':
     t = Tamagotchi("BOB")
@@ -14,3 +15,7 @@ if __name__ == '__main__':
     Wash(t)
     print(t)
 
+    if Is_dead(t):
+        print("Game Over !")
+    else :
+        print("Your pet is alive")

@@ -1,19 +1,19 @@
 def Feed(pet):
     """Reduces Hunger"""
-    pet.hunger = max(0, pet.hunger - 20)
+    pet.stats["hunger"] = max(0, pet.stats["hunger"] - 20)
 
 
 def Sleep(pet):
     """It allows you to have a little more energy."""
-    pet.energy = min(100, pet.energy + 30)
+    pet.stats["energy"] = min(100, pet.stats["energy"] + 30)
 
 
 def Play(pet):
     """Play with the pet but the pet decreases energy"""
-    pet.mood = min(100, pet.mood + 25)
-    pet.energy = max(0, pet.energy - 10)
+    pet.stats["mood"] = min(100, pet.stats["mood"] + 25)
+    pet.stats["energy"] = max(0, pet.stats["energy"] - 10)
 
 
 def Wash(pet):
     """Clean Pet"""
-    pet.cleanliness = min(100, pet.cleanliness + 40)
+    pet.stats["cleanliness"] = min(100, pet.stats["cleanliness"] + 40)
