@@ -40,7 +40,8 @@ Mood, Cleanliness.
 
 ## ⚠️ Game Over
 
-Le slime meurt si : - Faim = 100
+The slime dies if :
+- Faim = 100
 - Énergie = 0
 - Humeur = 0
 - Propreté = 0
