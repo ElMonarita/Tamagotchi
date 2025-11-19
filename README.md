@@ -3,25 +3,28 @@ Creation of a game based on the Tamagotchi concept to learn more about Python. T
 
 ## 📌 Contenu du projet
 
-    project/
+    Tamagotchi/
     │
     ├── main.py
-    ├── game.py
+    ├── test.py
     ├── src/
     │   ├── tamagotchi.py
-    │   ├── actions.py
-    │   ├── save_manager.py
+    │   ├── events.py
+    │   ├── game.py
+    │   ├── saveManager.py
     │   ├── utils.py
-    │   └── check.py
+    │   └── deathCheck.py
     │
     ├── data/
     │   └── ascii/
-    │       ├── eat/
-    │       ├── sleep/
-    │       ├── play/
-    │       ├── wash/
-    │       ├── death/
-    │       └── others…
+    │       ├── appear/
+    │       ├── cleaning/
+    │       ├── disappear/
+    │       ├── dying/
+    │       ├── enjoying/
+    │       ├── feeding/
+    │       ├── playing/
+    │       └── sleeping/
     │
     └── README.md
 
@@ -41,10 +44,10 @@ Mood, Cleanliness.
 ## ⚠️ Game Over
 
 The slime dies if :
-- Faim = 100
-- Énergie = 0
-- Humeur = 0
-- Propreté = 0
+- Hunger = 100
+- Energy = 0
+- Mood = 0
+- Cleanliness = 0
 
 ## 💾 Save and Load
 
