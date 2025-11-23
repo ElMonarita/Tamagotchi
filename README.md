@@ -44,7 +44,7 @@ Mood, Cleanliness.
 ## ⚠️ Game Over
 
 The slime dies if :
-- Hunger = 100
+- Hunger = 0
 - Energy = 0
 - Mood = 0
 - Cleanliness = 0
