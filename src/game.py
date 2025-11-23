@@ -5,20 +5,25 @@ from src.saveManager import SaveGame, SaveExists, LoadGame
 from src.utils import ClearScreen, AnimateAscii
 
 def StartGame():
-    print("====================Tamagotchi====================")
-    print("1. New Game")
-    print("2. Continue")
-
-    choice = input("> ")
-
-    if choice == "2" and SaveExists():
-        data = LoadGame()
-        pet = Tamagotchi.fromSave(data)
-        print("Save game loading")
-        return pet
-
-    name = input("Name of your Tamagotchi : ")
-    return Tamagotchi(name)
+    while True:
+        print("====================Tamagotchi====================")
+        print("1. New Game")
+        print("2. Continue")
+        choice = input("> ").strip()
+        match choice:
+            case "1":
+                name = input("Name of your Tamagotchi : ").strip()
+                return Tamagotchi(name)
+            case "2":
+                if SaveExists():
+                    data = LoadGame()
+                    pet = Tamagotchi.fromSave(data)
+                    print("Save game loaded")
+                    return pet
+                else:
+                    print("No save found. Starting new game...")
+            case _:
+                print("Invalid choice, try again.\n")
 
 def GameLoop(pet):
     ClearScreen()
@@ -56,6 +61,7 @@ def GameLoop(pet):
                 print("Backup complete. See you soon!")
                 break
             case _: 
+                ClearScreen()
                 print("Invalid choice.")
                 continue
         if IsDead(pet):
